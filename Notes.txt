@@ -1,0 +1,21 @@
+Database?
+------------
+A database is an organised collection of data that can be easily accessed and managed.
+
+RDBMS--> Relational Database Management System.
+>> it stores data in tables(rows and columns)
+
+MySQL-- RDBMS 
+---------------
+>> Open-source and widely used RDBMS.
+>> Follows standard SQL(Structured Query Language).
+>> Fast, secure and scalable.
+
+Syntax of SQL 
+-------------
+>>Not Case Sensitive.
+>>every query should end with ";"
+
+Queries
+---------
+To Create a New DataBase---> create database "DB name";
