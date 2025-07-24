@@ -16,6 +16,80 @@ Syntax of SQL
 >>Not Case Sensitive.
 >>every query should end with ";"
 
+Datatypes of mySQL 
+------------------
+
+Numeric DataTypes 
+------------------
+INT ---> 10,-45,-10,9
+TINYINT---> Very Small Integers(1 byte of data)8-bit, -128 to 127
+SMALLINT---> Small Integers (2 Bytes) -32,768 to 32,767
+MEDIUMINT --> 3-bytes  +-8 million
+BIGINT ---> 8-Bytes 
+DECIMAL(p,s)--> Decimal numbers with fixed floating point(p-precision, s-scale). DECIMAL(3,4) ex:-999.9899, 888.7865
+DOUBLE---> store decimal numbers
+
+String DataTypes
+-----------------
+CHAR(len)---> fixed length Character String---> CHAR(4) ex: livi, navi
+VARCHAR(len)--> Variable length Character String ---> VARCHAR(5)---> a, in, the.
+TEXT --> Long text.
+TINYTEXT --> 255 char
+MEDIUMTEXT--> 16 million char
+LONGTEXT---> 4 billion char
+ENUM('male','female','others')---> Predefined values
+
+Boolean DataType
+----------------
+BOOLEAN 1,0
+
+Date & Time Datatypes
+----------------------
+DATE ---> Date alone (YYYY-MM-DD)
+DATETIME ---> Date and Time
+TIME --->Time only
+YEAR ---> Year(YYYY)
+
+
+Constraints
+------------
+Primary Key--> unique id number for every row
+
+
 Queries
 ---------
 To Create a New DataBase---> create database "DB name";
+To mention which DB you are gonna manipulate---> USE "DB name"
+To Create a new table in a DB---> "CREATE TABLE name(columns details)" ex: col details-->(name DataType contraints).
+To see the structure of table---> Describe "table name"
+
+CRUD---> Create Read Update Delete
+-----
+Create:
+-------
+To insert data into a table---> "INSERT INTO tablename(fields) VALUES (),(),()"
+
+Read:
+------
+To read the data present in a table---> "SELECT col details FROM Tablename" col--> *(all columns)
+
+Update:
+--------
+To update an existing record data----> "UPDATE tablename SET col=val WHERE condition"
+
+DELETe:
+-------
+TO delete a record ----> "DELETE FROM tablename WHERE condition"
+
+
+
+
+WHERE Clause ---> Filtering Records
+-------------------------------------
+can be used with SELECT, UPDATE, DELETE
+
+WHERE condition----> Filters thr record.
+
+condition 
+----------
+=,<,>,!=,<=,>=
