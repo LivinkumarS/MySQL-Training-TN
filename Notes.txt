@@ -90,6 +90,51 @@ can be used with SELECT, UPDATE, DELETE
 
 WHERE condition----> Filters thr record.
 
-condition 
+Operators
 ----------
-=,<,>,!=,<=,>=
+Comparison Operators.
+----------------------
+= ---> equal,
+!= or <> ---> not equal,
+> ---> greater than
+< ---> lesser than
+<= ---> lesser than or equal
+>= ---> greater or equal
+
+BETWEEN Operator.
+------------------
+BETWEEN  val1 AND val2
+
+IN operator 
+--------------
+Filters rows where column matches one of many values.
+
+IN (val1, val2, val3..).
+
+LIKE Operator (Pattern Matching)
+--------------
+Used to match text patterns - case sensitive.
+
+% ---> that matches any number of Characters
+_ ---> that matches exactly one Character.
+
+
+Logical Operators 
+-------------------
+used to combine two diff conditions.
+
+AND----> only when two conditions are satisfied.
+OR---> any one must be satisfied
+NOT --> works only with one condition. reverting the value.
+
+
+ORDER BY (Sorting)
+-------------------
+Sort rows ascending or descending.
+ORDER BY col ASC
+ORDER BY col DESC
+
+LIMIT 
+------
+used to limit the records.
+LIMIT 3;
