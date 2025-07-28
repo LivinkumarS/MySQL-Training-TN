@@ -138,3 +138,31 @@ LIMIT
 ------
 used to limit the records.
 LIMIT 3;
+
+Functions in MySQL 
+-------------------
+predefined operations that returns values based on input.
+
+Numeric Functions 
+-------------------
+ROUND---> Round off the number to the nearest integer. ROUND(56.676544,y)-->57. y---> number of digitd sfter the decimal point. ROUND(56.676544,4)--> 56.6765
+FLOOR---> return previous Integer(rounds down) ---> FLOOR(69.8907)--->69
+CEIL ---> return next integer. CEIL(99.09)--->100
+MOD(val1,val2)--> returns the reminder when dividind val1 by val2. MOD(30,4)--->2
+POWER(val1,val2)--> val1 power val2
+
+STRING Functions
+-----------------
+CONCAT(str1, str2)---> Joining those two strings.
+LENGTH(str)--> return length of that string as Integer.
+UPPER(str)--> return uppercase str.
+LOWER(str)--> return lowercase str.
+SUBSTRING(str, start, len)---> extract sub-string from a string.
+TRIM(str)--> removes excess space.
+
+Date and Time Functions
+-------------------------
+NOW()--> return current date and time
+CURDATE() --> return current date--> yyyy-mm-dd
+CURTIME() --> return current time--> hh:mm:ss
+DATEDIFF(date1,date2)---> return no. of dates Between those two days.
