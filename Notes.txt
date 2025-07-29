@@ -52,9 +52,14 @@ YEAR ---> Year(YYYY)
 
 
 Constraints
-------------
-Primary Key--> unique id number for every row
-
+------------(rules we use when we create a table)
+Primary Key--> unique id number for every row---> unique identifier for each data. no duplicate values allowed.
+auto_increment---> increases value for every new record.
+not null---> prevents null value
+unique---> values are different
+default --> automatically inserts a value if null is provided.
+Foreign Key---> Creates a link between two tables.
+(Foreign key refers to the primary key in another table)
 
 Queries
 ---------
@@ -77,11 +82,16 @@ Update:
 --------
 To update an existing record data----> "UPDATE tablename SET col=val WHERE condition"
 
-DELETe:
+DELETE:
 -------
 TO delete a record ----> "DELETE FROM tablename WHERE condition"
 
 
+ALTERING TABLE 
+---------------
+Add new column ---> ALTER TABLE tabname ADD coldetails.
+modify a column ---> ALTER TABLE tabname MODIFY col details
+ADD foreign key ---> ALTER TABLE tabname ADD CONSTRAINT details
 
 
 WHERE Clause ---> Filtering Records
