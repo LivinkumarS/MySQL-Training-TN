@@ -176,3 +176,22 @@ NOW()--> return current date and time
 CURDATE() --> return current date--> yyyy-mm-dd
 CURTIME() --> return current time--> hh:mm:ss
 DATEDIFF(date1,date2)---> return no. of dates Between those two days.
+
+
+
+Joins in MySQL 
+---------------
+Join combines rows from two or more tables.
+
+INNER JOIN---> Returns only matching result.
+ex: select * from actor_list inner join latest_actor_movie on latest_actor_movie.actorId=actor_list.id;
+
+LEFT JOIN 
+-----------
+It will return all the records from left table and matches the right table.
+ex: select a.name,l.movie from actor_list a LEFT join latest_actor_movie l on l.actorId=a.id;
+
+RIGHT JOIN 
+----------
+It will return all the values from right table and matches the records of left table.
+select a.name,l.movie from actor_list a RIGHT join latest_actor_movie l on l.actorId=a.id;
