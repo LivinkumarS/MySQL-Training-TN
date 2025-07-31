@@ -195,3 +195,28 @@ RIGHT JOIN
 ----------
 It will return all the values from right table and matches the records of left table.
 select a.name,l.movie from actor_list a RIGHT join latest_actor_movie l on l.actorId=a.id;
+
+Aggregate Functions 
+----------------------
+Aggregate Functions return a single value calculated from multiple rows.
+
+1) COUNT()  ---> return number of rows.
+2) SUM() ----> returns the total sum of a column.
+3) AVG() ----> Returns the average value
+4) MIN() ----> return the smallest value
+5) MAX() ----> return the largest value.
+
+GROUP BY.
+---------
+Used to group rows that have the the same values in specified column.
+
+Subquery 
+---------
+Subquery is an SQL query nested inside another query.
+>> can return single or multiple rows.
+
+Scalar---> Single value Subquery
+ex: select * from price_list where price>(select avg(price) as average_price from price_list);
+
+Row Subquery---> Returns one row itself.
+ex: select * from actor_list where id in (select actorId from latest_actor_movie);
